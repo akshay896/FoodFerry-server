@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 const placeOrder = async (req, res) => {
 
-    const frontend_url = "https://foodferry-client.onrender.com"
+    const frontend_url = "https://food-ferry-client-r57m.vercel.app"
     try {
         const newOrder = new orderModel({
             userId: req.body.userId,
